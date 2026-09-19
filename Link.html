@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Link Usages</h1>
+    <ul>
+        <li>
+        <dl>
+            <!--Always include Protocols for external sites or it will consider that as relative path of our own website-->
+            <dt><h3>External Link (Link Another Website)</h3></dt>
+            <dd><a href="https://www.Google.com">Visit Google</a></dd>
+        </dl>
+        </li>
+        <li>
+            <dl>
+            <!--Just put the file name in href it it in the same folder-->
+            <!--to go down into folder use / like pages/contact.html-->
+            <!--now you have navigated to the pages inside the folder and 
+            now you need to go back to previous page use ../index.html, 
+            because ../ go up one folder level-->
+            <!--Getting relative path wrong will cause 404-->
+            <dt><h3>Internal/Relative Link(another page on your own site) </h3></dt>
+            <dd><a href="Products/Shoe.html">Shoe</a></dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <!--leading / means start from the websites root domain 
+                not from the current file folder-->
+                <dt><h3>Absoulute Path Link from site</h3></dt>
+                <dd><p>On mysite.com, this always points to mysite.com/products/shoes.html — no matter which page you're currently on.</p></dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <!--Click it open the user's default email client-->
+                <dt><h3>Email Link</h3></dt>
+                <dd><a href="mailto:kriskanna17@gmail.com">Email Me</a></dd>
+                <dd><a href="mailto:kriskanna17@gmail.com?subject=Job Application&body=Hello, I am interested in ...">Apply with subject</a></dd>
+            </dl>
+        </li>
+        <li>
+            <dl>
+                <!--Used to jump to a specific section of the same page by using ID-->
+                <dt><h3>Jump Link (specific spot within the same page)</h3></dt>
+                <dd><a href="#section">go to end</a></dd>
+            </dl>
+        </li>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consequuntur modi nihil dignissimos aspernatur, quaerat aut. Accusantium rem, dolor similique et inventore maiores deleniti cum quasi ratione sed neque veniam fugit praesentium eaque optio voluptate eligendi hic ducimus. Cupiditate illum quibusdam dolore ad, laboriosam non numquam optio mollitia neque error dignissimos culpa quo perspiciatis rem magnam amet iusto. Recusandae sit sequi explicabo laborum. Neque quasi libero similique amet dolorum doloremque fuga repellendus possimus cupiditate voluptatem odit fugit repudiandae exercitationem laboriosam fugiat, nulla voluptate tenetur vel tempora? Quo quia ut neque nulla repellendus natus similique assumenda? Perspiciatis libero consequatur deserunt magni?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eveniet neque unde sapiente veritatis minus reiciendis dolores. Voluptatem nostrum dolor iure tenetur non consequuntur, saepe distinctio beatae nihil rem accusantium odio incidunt eos suscipit dignissimos, architecto sunt quam maxime facilis repellendus fugit. Doloremque delectus iusto perferendis labore incidunt ratione ea illum, vero quas officiis maxime soluta autem mollitia? A provident nostrum necessitatibus minima et deserunt temporibus, neque molestias ex aperiam incidunt accusamus, ipsam eaque rem pariatur doloribus dolorum nulla deleniti aspernatur? Velit, explicabo placeat? Nostrum expedita ab nulla ratione perspiciatis dignissimos tempora? Facere, ipsa exercitationem perferendis quae fugiat numquam cumque!</p>
+        <h3 id="section">The End</h3>
+        <br>
+        <!--anchorn with no target, so browser defaults to the top-->
+        <a href="#">Go to Top</a>
+    </ul>
+
+    
+</body>
+</html>
