@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Tabular data-->
+    <h1>Tables</h1>
+    <table border="1">
+        <!--reference a entire column as a single unit-->
+        <colgroup>
+            <col style="background-color: aqua;" >
+            <col style="background-color: aquamarine;">
+
+        </colgroup>
+        <caption>Basic table</caption>
+        <thead>
+            <tr>
+                <!--header describe the entire column below it
+                like Name:Krishnakumar murugan pairs same 
+                we can scope row also-->
+                <td scope="col">Name</td>
+                <td scope="col">Desigination</td>
+                <td scope="col">Salary</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Krishnakumar Murugan</td>
+                <td>Software Developer Trainee</td>
+                <td>2Lpa</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br>
+
+    <table border="1">
+        <caption>Merging Cell Colspan and rowspan</caption>
+        <thead>
+            <tr>
+                <th colspan="2">Full Name</th>
+                <th rowspan="2">Age</th>
+            </tr>
+            <tr>
+                <th>Firstname</th>
+                <th>Secondname</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Krishnakumar</td>
+                <td>Murugan</td>
+                <td>21</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
