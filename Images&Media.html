@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--img is a void/self closing element-->
+    <h1>Images & Media</h1>
+    <h3>Basic Image Tag</h3>
+    <img src="assets/images/git.png" 
+        alt="github"
+        width="30%" 
+        height="20%" 
+        title="GitHub logo"
+        loading="lazy">
+    <h3>figure and figcaption -semantic image captioning:</h3>
+    <!--Better than using img + p tag-->
+    <figure>
+        <img src="assets/images/sales.png" 
+            alt="sales"
+            width="30%"
+            height="20%"
+            title="Sales chart"
+            loading="lazy">
+            <figcaption>Fig 1: Sales Report</figcaption>
+    </figure>
+    <h3>Responsive/multiple image sources</h3>
+    <!--used to serve different images based on the screen size or format support-->
+    <!--browser picks the first matching source non matches it fall to img-->
+    <picture>
+        <source media="(max-width:500px)" srcset="assets/images/cherry.jpg">
+        <source media="(max-width:1200px)" srcset="assets/images/apple.webp">
+        <img src="assets/images/jackfruit.jpg" alt="jackfruit">
+    </picture>
+    
+</body>
+</html>
